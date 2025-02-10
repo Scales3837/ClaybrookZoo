@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0%;
+}
+
+header {
+    grid-area: header;
+    font-weight: 400;
+    padding: 1%;
+    margin: 0%;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    margin: 2%;
+    ;
+}
+
+nav {
+    grid-area: nav;
+    margin: 1%;
+}
+
+main {
+    grid-area: main;
+    display: inline;
+    margin: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+    background-image: url("images/banner4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+img {
+    float: right;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 200, 0, 0.3);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+li {
+    float: left
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16%;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(0, 200, 0, 0.5);
+}
